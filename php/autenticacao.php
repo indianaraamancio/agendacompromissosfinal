@@ -20,7 +20,7 @@ if($linhas==1){
     header("Location: principalexecutivo.php");
    }
 }else{
-    echo "Usuário ou senha inválidos!";
+    header("Location: ../index.php?retorno=1");
 }
 
 ?>

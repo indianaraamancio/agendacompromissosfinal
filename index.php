@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
+<div id="alertas">
+    <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <span>Usuário ou senha inválidos!</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <?php } ?>
+</div>
+
 <main class="row">
     <div class="container">
         <form action="php/autenticacao.php" method="POST">
@@ -24,12 +34,12 @@
             </div>
 
             <div class="row form-floating">
-                <input type="text" name="email" class="col form-control" id="email">
+                <input type="text" name="email" class="col form-control" id="email" required>
                 <label for="email" class="form-label">E-mail</label>
             </div>
 
             <div class="row form-floating">
-                <input type="password" name="senha" class="col form-control" id="senha">
+                <input type="password" name="senha" class="col form-control" id="senha" required>
                 <label for="senha" class="form-label">Senha</label>
             </div>
 
