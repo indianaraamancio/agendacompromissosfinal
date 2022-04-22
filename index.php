@@ -22,7 +22,6 @@
     <?php } ?>
 </div>
 
-<main class="row">
     <div class="container">
         <form action="php/autenticacao.php" method="POST">
             <div class="row">
@@ -44,12 +43,12 @@
             </div>
 
             <div class="row botoes">
-                <button type="reset" class="col btn btn-secondary">Limpar</button>
-                <button type="submit" class="col btn btn-success">Entrar</button>
+                <button type="reset" class="col-2 btn btn-secondary">Limpar</button>
+                <button type="submit" class="col-2 btn btn-success">Entrar</button>
             </div>
         </form>    
     </div>
-</main>
+
 
 </body>
 </html>
