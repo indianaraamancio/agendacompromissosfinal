@@ -12,35 +12,34 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <main>
-
-    <div> 
-        <div>     
-            <figure class="figure">
-            <img src="img/login.jpg" class="figure-img" alt="Logotipo" id="imglogin">
-            </figure>
-        </div>
-
+<main class="row">
+    <div class="container">
         <form action="php/autenticacao.php" method="POST">
-        <div class="form-floating">          
-            <input type="email" class="form-control" id="email" name="email">
-            <label for="email">Insira seu e-mail </label>
-        </div>
-        <div class="form-floating">                
-            <input type="password" class="form-control" id="senha" name="senha" aria-describedy="senhaHelp">
-            <label for="senha" class="form-label">Senha</label>
-        </div>
-        <div>
-            <button type="reset" class="btn btn-secondary">Limpar</button>
-           <button type="submit" class="btn btn-success">Entrar</button>           
-        </div>
+            <div class="row">
+                <svg xmlns="http://www.w3.org/2000/svg" id="logo" fill="currentColor" class="bi bi-calendar-event col-2" viewBox="0 0 16 16">
+                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+                <h3 class="col-10">Agenda de compromissos</h3>
+            </div>
 
-        </form>
+            <div class="row form-floating">
+                <input type="text" name="email" class="col form-control" id="email">
+                <label for="email" class="form-label">E-mail</label>
+            </div>
 
-    </div>    
+            <div class="row form-floating">
+                <input type="password" name="senha" class="col form-control" id="senha">
+                <label for="senha" class="form-label">Senha</label>
+            </div>
 
+            <div class="row botoes">
+                <button type="reset" class="col btn btn-secondary">Limpar</button>
+                <button type="submit" class="col btn btn-success">Entrar</button>
+            </div>
+        </form>    
+    </div>
+</main>
 
-
-    </main>
 </body>
 </html>
