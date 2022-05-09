@@ -10,6 +10,7 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/alertas.css">
 </head>
 <body>
 
@@ -22,32 +23,46 @@
     <?php } ?>
 </div>
 
-    <div class="container">
-        <form action="php/autenticacao.php" method="POST">
-            <div class="row">
-                <svg xmlns="http://www.w3.org/2000/svg" id="logo" fill="currentColor" class="bi bi-calendar-event col-2" viewBox="0 0 16 16">
-                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                </svg>
-                <h3 class="col-10">Agenda de compromissos</h3>
+<section class="vh-100" style="background-color: #F2D7D2;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://planosperfeitos.com/wp-content/uploads/2021/07/05-04-21-1024x1024.jpeg" 
+                alt="Compromissos" class="imgLogin" width="300px" height="500px" style="border-radius: 1rem;">
             </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+              <h6 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Efetue o login para acessar o sistema</h6>
+                
+                <form action="php/autenticacao.php" method="POST">                 
 
-            <div class="row form-floating">
-                <input type="text" name="email" class="col form-control" id="email" required>
-                <label for="email" class="form-label">E-mail</label>
-            </div>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example17">E-mail</label>
+                    <input type="email" id="form2Example17" name="email" class="form-control form-control-lg">                   
+                  </div>
 
-            <div class="row form-floating">
-                <input type="password" name="senha" class="col form-control" id="senha" required>
-                <label for="senha" class="form-label">Senha</label>
-            </div>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example27">Senha</label>
+                    <input type="password" id="form2Example27" name="senha" class="form-control form-control-lg">
+                    
+                  </div>
 
-            <div class="row botoes">
-                <button type="reset" class="col-2 btn btn-secondary">Limpar</button>
-                <button type="submit" class="col-2 btn btn-success">Entrar</button>
+                  <div class="pt-1 mb-4">
+                    <button  type="submit" class="btn btn-success">Entrar</button>
+                  </div>
+
+                </form>
+              </div>
             </div>
-        </form>    
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
 
 
 </body>

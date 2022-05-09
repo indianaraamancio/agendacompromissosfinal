@@ -1,6 +1,6 @@
 <?php
 
-require_once("conexaobanco.php");
+require_once("conexaoBanco.php");
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
