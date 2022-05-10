@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de compromissos</title>
-    <!-- CSS only -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/alertas.css">
@@ -40,13 +40,13 @@
                 <form action="php/autenticacao.php" method="POST">                 
 
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form2Example17">E-mail</label>
-                    <input type="email" id="form2Example17" name="email" class="form-control form-control-lg">                   
+                    <label class="form-label" >E-mail</label>
+                    <input type="email" name="email" class="form-control form-control-lg">                   
                   </div>
 
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form2Example27">Senha</label>
-                    <input type="password" id="form2Example27" name="senha" class="form-control form-control-lg">
+                    <label class="form-label" >Senha</label>
+                    <input type="password" name="senha" class="form-control form-control-lg">
                     
                   </div>
 
