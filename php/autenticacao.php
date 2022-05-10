@@ -15,9 +15,9 @@ $usuario= mysqli_fetch_assoc($resultado);
 
 if($linhas==1){
    if($usuario['nivel']=="1"){
-    header("Location: principalsecretaria.php");
+    header("Location: principalSecretaria.php");
    }else{
-    header("Location: principalexecutivo.php");
+    header("Location: principalExecutivo.php");
    }
 }else{
     header("Location: ../index.php?retorno=1");

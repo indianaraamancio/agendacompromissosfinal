@@ -4,23 +4,13 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pessoas
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="pessoasForm.php">Nova pessoa</a></li>         
-            <li><a class="dropdown-item" href="relacaoForm.php">Nova relação</a></li>
-          </ul>
-        </li>       
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Compromissos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="agendarCompromissoForm.php">Agendar</a></li>
-            <li><a class="dropdown-item" href="novoTipoForm.php">Novo tipo</a></li>         
-            <li><a class="dropdown-item" href="consultarCompromissoForm.php">Consultar</a></li>
+            <li><a class="dropdown-item" href="consultarCompromissoFormExec.php">Consultar</a></li>
           </ul>
-        </li>       
+        </li>  
+             
       </ul>
       <div class="d-flex">    
        <a href="efetuarLogout.php"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">

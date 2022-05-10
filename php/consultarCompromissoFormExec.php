@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/formularios.css">		
 </head>
 <body>
-    <?php include("menuSecretaria.php"); ?>    
+    <?php include("menuExecutivo.php"); ?>    
 
     <h3 class="titulos">Consultar compromisso</h3>  
 

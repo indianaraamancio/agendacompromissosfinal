@@ -37,8 +37,8 @@
 		
 		<div class="form-group row">           
             <div class="col-md-8">
-            <label class="control-label">Nome do compromisso *</label>
-            <input type="text" name="nome" class="form-control" >
+            <label class="control-label">Descrição do compromisso *</label>
+            <input type="text" name="descricao" class="form-control" >
             </div>
 		</div>
 		
@@ -175,7 +175,7 @@
 	
 	<form action="#" method="GET" class="formAcao">
 		<div class="form-group">
-		  <label class="control-label" for="textoPesquisa">Nome </label>  			
+		  <label class="control-label" for="textoPesquisa">Descrição </label>  			
 			 <input class="form-control" id="textoPesquisa" type="text" name="nomePesquisa">
 			 <button type="submit" class="botaoAcao">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -189,7 +189,7 @@
     <div class="col-md-8">
 	<table class="table">
 		<tr>
-			<th>Nome do compromisso</th>
+			<th>Descrição do compromisso</th>
 			<th>Tipo</th>
 			<th>Data início</th>
 			<th>Data fim</th>
