@@ -17,7 +17,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="agendarCompromissoForm.php">Agendar</a></li>
-            <li><a class="dropdown-item" href="novoTipoForm.php">Novo tipo</a></li>         
+            <li><a class="dropdown-item" href="tipoCompromissoForm.php">Novo tipo</a></li>         
             <li><a class="dropdown-item" href="consultarCompromissoForm.php">Consultar</a></li>
           </ul>
         </li>       

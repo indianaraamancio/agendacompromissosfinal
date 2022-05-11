@@ -13,9 +13,9 @@ $linhasCompromissos=mysqli_num_rows($resultadoVerificar);
 if($linhasCompromissos==0){
     $comandoExclusao="DELETE FROM tiposCompromissos WHERE idTipo=".$idTipo;
     $resultado=mysqli_query($conexao, $comandoExclusao);
-    header("Location: novoTipoForm.php?retorno=2");
+    header("Location: tipoCompromissoForm.php?retorno=2");
 }else{
-    header("Location: novoTipoForm.php?retorno=3");
+    header("Location: tipoCompromissoForm.php?retorno=3");
 }
 
 

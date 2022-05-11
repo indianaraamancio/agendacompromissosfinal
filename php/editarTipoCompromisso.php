@@ -10,9 +10,9 @@ $comando="UPDATE tiposcompromissos SET tipo='".$tipo."' WHERE idTipo=".$idTipo;
 $resultado=mysqli_query($conexao, $comando);
 
 if($resultado==true){
-    header("Location: novoTipoForm.php?retorno=4");
+    header("Location: tipoCompromissoForm.php?retorno=4");
 }else{
-    header("Location: novoTipoForm.php?retorno=5");
+    header("Location: tipoCompromissoForm.php?retorno=5");
 }
 
 

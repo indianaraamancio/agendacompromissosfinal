@@ -11,9 +11,9 @@ echo $comando;
 $resultado=mysqli_query($conexao, $comando);
 
 if($resultado==true){
-    header("Location: novoTipoForm.php?retorno=1");
+    header("Location: tipoCompromissoForm.php?retorno=1");
 }else{
-    header("Location: novoTipoForm.php?retorno=0");
+    header("Location: tipoCompromissoForm.php?retorno=0");
 }
 
 
