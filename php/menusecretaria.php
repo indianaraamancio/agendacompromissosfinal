@@ -7,7 +7,7 @@
             Pessoas
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="pessoasForm.php">Nova pessoa</a></li>         
+            <li><a class="dropdown-item" href="pessoaForm.php">Nova pessoa</a></li>         
             <li><a class="dropdown-item" href="relacaoForm.php">Nova relação</a></li>
           </ul>
         </li>       
