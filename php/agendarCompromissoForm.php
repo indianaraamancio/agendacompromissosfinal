@@ -36,7 +36,6 @@
     <h3 class="titulos">Agendar compromisso</h3>  
 
 	<form action="agendarCompromisso.php" method="POST">
-
 		
 		<div class="form-group row">           
             <div class="col-md-8">
