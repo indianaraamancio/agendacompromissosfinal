@@ -45,7 +45,7 @@
 		<div class="form-group">
 		<label class="control-label"></label>
 		<div class="col-md-8">
-			<button  class="btn btn-danger" type="reset">Limpar</button>
+        <a href="relacaoForm.php"><button  class="btn btn-danger" type="button">Cancelar</button></a>
 			<button  class="btn btn-success" type="submit">Cadastrar</button>			
 		</div>
 		</div>

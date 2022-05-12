@@ -35,7 +35,7 @@
             </div>
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
-              <h6 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Efetue o login para acessar o sistema</h6>
+              <h6 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Efetue o login para acessar o sistema de agendamento</h6>
                 
                 <form action="php/autenticacao.php" method="POST">                 
 

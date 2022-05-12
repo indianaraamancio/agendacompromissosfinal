@@ -25,7 +25,7 @@
         $t=mysqli_fetch_assoc($resultado);
     ?>
 
-    <h3 class="titulos">Editar de tipo de compromisso</h3>  
+    <h3 class="titulos">Edição de tipo de compromisso</h3>  
 
 	<form action="editarTipoCompromisso.php" method="POST">
 
@@ -40,7 +40,7 @@
 		<div class="form-group">
 		<label class="control-label"></label>
 		<div class="col-md-8">
-			<button  class="btn btn-danger" type="reset">Limpar</button>
+		<a href="tipoCompromissoForm.php"><button  class="btn btn-danger" type="button">Cancelar</button></a>
 			<button  class="btn btn-success" type="submit">Cadastrar</button>			
 		</div>
 		</div>
