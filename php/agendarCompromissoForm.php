@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="../css/alertas.css">
 </head>
 <body>
-
+<?php	
+	session_start();
+    if(isset($_SESSION['email'])){
+?>
 <div id="alertas">
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -225,6 +228,10 @@
 	</table>
 	</div>
     </div>
-
+    <?php
+            }else{
+                echo "Efetue login para acessar essa página!";
+            }
+	    ?>
 </body>
 </html>

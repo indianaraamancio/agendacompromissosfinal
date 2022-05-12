@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="../css/formularios.css">		
 </head>
 <body>
+<?php	
+	session_start();
+    if(isset($_SESSION['email'])){
+?>
     <?php include("menuExecutivo.php"); ?>    
 
     <h3 class="titulos">Consultar compromisso</h3>  
@@ -85,6 +89,11 @@
 	</div>
 	</div>
 	
+	<?php
+            }else{
+                echo "Efetue login para acessar essa página!";
+            }
+	    ?>
 
 </body>
 </html>

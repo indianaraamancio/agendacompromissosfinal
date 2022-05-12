@@ -13,6 +13,6 @@
 <body>
 
 <?php include("menuSecretaria.php"); ?>
-
+<?php include("alertaEfetuarLogin.php"); ?>
 </body>
 </html>

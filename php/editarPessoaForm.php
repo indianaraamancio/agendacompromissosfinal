@@ -14,6 +14,11 @@
 	<link rel="stylesheet" href="../css/pessoasForm.css">	
 </head>
 <body>
+<?php	
+	session_start();
+    if(isset($_SESSION['email'])){
+?>
+
     <?php include("menuSecretaria.php"); ?>    
 
     <h3 class="titulos">Edição de pessoas</h3>  
@@ -110,4 +115,10 @@
 		</div>
 		</div>
 		
+		<?php
+            }else{
+                echo "Efetue login para acessar essa página!";
+            }
+	    ?>
+
 	</form>

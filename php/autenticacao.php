@@ -14,13 +14,19 @@ $usuario= mysqli_fetch_assoc($resultado);
 
 
 if($linhas==1){
+    
+    session_start();
+	$_SESSION['email']=$usuario['email'];
+	$_SESSION['nivel']=$usuario['nivel'];
+    $_SESSION['idUsuario']=$usuario['idUsuario'];  
+
    if($usuario['nivel']=="1"){
     header("Location: principalSecretaria.php");
    }else{
     header("Location: principalExecutivo.php");
    }
 }else{
-    header("Location: ../index.php?retorno=1");
+    header("Location: ../index.php?retorno=0");
 }
 
 ?>

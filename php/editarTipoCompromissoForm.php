@@ -14,6 +14,10 @@
 
 </head>
 <body>
+<?php	
+	session_start();
+    if(isset($_SESSION['email'])){
+?>
     <?php include("menuSecretaria.php"); ?>    
 
     <?php
@@ -44,6 +48,11 @@
 			<button  class="btn btn-success" type="submit">Cadastrar</button>			
 		</div>
 		</div>
-		
+
+        <?php
+            }else{
+                echo "Efetue login para acessar essa página!";
+            }
+	    ?>
 	</form>
     </body>

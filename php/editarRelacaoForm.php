@@ -14,7 +14,10 @@
 
 </head>
 <body>
-
+<?php	
+	session_start();
+    if(isset($_SESSION['email'])){
+?>
     <?php include("menuSecretaria.php"); ?>    
 
     <?php
@@ -52,5 +55,12 @@
 		
 	</form>
 	
+    <?php
+            }else{
+                echo "Efetue login para acessar essa página!";
+            }
+	    ?>
+    
+
     </body>
     </html>
