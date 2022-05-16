@@ -49,10 +49,12 @@
 		</div>
 		</div>
 
-        <?php
+       
+	</form>
+    </body>
+
+    <?php
             }else{
                 echo "Efetue login para acessar essa página!";
             }
 	    ?>
-	</form>
-    </body>

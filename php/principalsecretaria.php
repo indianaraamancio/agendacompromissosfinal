@@ -12,7 +12,17 @@
 </head>
 <body>
 
+<?php
+    session_start();
+    if(isset($_SESSION['email'])){
+?>
+
 <?php include("menuSecretaria.php"); ?>
 
 </body>
 </html>
+<?php
+}else{
+			echo "Efetue login para acessar essa página!";
+	}
+?>

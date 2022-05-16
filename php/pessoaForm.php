@@ -220,11 +220,13 @@
 	</div>
 	</div>
 
-	<?php
+	
+
+</body>
+</html>
+
+<?php
 		}else{
 			echo "Efetue login para acessar essa página!";
 		}
 	?>
-
-</body>
-</html>
