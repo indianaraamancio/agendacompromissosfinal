@@ -1,0 +1,4 @@
+Terminar agendamento;
+Fazer consultas;
+Ajustar numeração dos retornos;
+Criar tela de  "efetue login";
