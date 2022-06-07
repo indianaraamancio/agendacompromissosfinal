@@ -60,7 +60,7 @@ foreach($pessoas as $p){
 
 ?>
 
-<form action="geraPDF.php" method="POST">
+<form action="gerarPDF.php" method="POST">
     <input type="hidden" value="<?=$compromisso['idCompromisso']?>" name="idComp">
     <button type="submit" class="btn btn-secondary">Gerar PDF </button>
 </form>
