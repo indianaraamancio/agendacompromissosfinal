@@ -3,6 +3,7 @@ function adicionarPessoa(){
     $("#pessoasDoCompromisso").append(novaPessoa);   
 }
 
+/**Função para o Agendar Compromissos */
 function removerPessoa(botao){    
    var quantidadePessoas= document.getElementById("pessoasDoCompromisso").childElementCount;
    if(quantidadePessoas==1){
@@ -12,12 +13,22 @@ function removerPessoa(botao){
     }    
 }
 
+/**Função para o Editar Compromissos - Remove mesmo se for a última pessoa*/
+function removerPessoasEdicao(botao){      
+         $(botao).parent().parent().remove();        
+ }
+ 
+/**Função para o Editar Compromissos - Remover as pessoas que já estão no compromisso*/
+function removerPessoaJaEstaNoCompromisso(botao){   
+         $(botao).parent().remove();     
+ }
+
 function verificarPessoaRepetida(idPessoa){
     if(idPessoa!=0){
         var pessoasSelecionadas = document.getElementsByName("idPessoa[]");
         var i=0;        
         for(i=0; i<pessoasSelecionadas.length-1; i++){
-            alert("Pessoas selecionadas "+pessoasSelecionadas[i].value);
+       
              if(pessoasSelecionadas[i].value==idPessoa){
                 console.log(pessoasSelecionadas[i]);
                 alert("Essa pessoa já foi selecionada! Selecione outra ou remova-a!");

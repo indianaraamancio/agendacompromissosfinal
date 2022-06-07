@@ -4,7 +4,8 @@ require_once("conexaoBanco.php");
 
 $idPessoa=$_POST['idPessoa'];
 
-$verificarCompromissos="SELECT * FROM pessoas_has_agendarcompromissos WHERE pessoas_idPessoa=".$idPessoa;
+$verificarCompromissos="SELECT * FROM pessoas_has_agendarcompromissos WHERE 
+pessoas_idPessoa=".$idPessoa;
 
 $resultadoVerificar=mysqli_query($conexao,$verificarCompromissos);
 

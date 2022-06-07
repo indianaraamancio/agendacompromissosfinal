@@ -105,7 +105,7 @@
 
 			if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
 				$pesquisa=$_GET['pesquisa'];
-				$comando="SELECT * FROM tiposCompromissos WHERE tipo LIKE '".$pesquisa."%'";				
+				$comando="SELECT * FROM tiposCompromissos WHERE descricao LIKE '".$pesquisa."%'";				
 			}
 			$resultado=mysqli_query($conexao,$comando);
 			$linhas=mysqli_num_rows($resultado);
@@ -122,7 +122,7 @@
 
 			foreach($tiposRetornados as $t){?>
 		<tr>
-			<td><?=$t['tipo']?></td>			
+			<td><?=$t['descricao']?></td>			
 			<td>
 			<form action="editarTipoCompromissoForm.php" method="POST"  class="formAcao">
 				<input type="hidden" name="idTipo" value="<?=$t['idTipo']?>">
